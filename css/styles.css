@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #fbfbfb;
     font-family: 'Rubik', sans-serif;
     text-align: center;
 }
@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    min-height: 100px;
+    min-height: 90px;
     position: relative;
 }
 
@@ -57,7 +57,7 @@ a {
     display: block;
     margin: auto;
     border-radius: 100%;
-    width: 250px;
+    width: 400px;
     margin-top: 50px;
 
 }
@@ -77,12 +77,12 @@ h1{
     padding: 20px;
 }
 
-button {
+.boton {
     width: 110px;
     height: 30px;
     border-radius: 30px;
-    background-color: rgb(172, 78, 180);
-    color: #fff;
+    background-color: #af599e;
+    color: #fbfbfb;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -96,10 +96,11 @@ h2{
 
 .contenedor-2{
     padding: 20px;
-    background-color: rgba(212, 114, 188, 0.5);
+    background-color: rgba(175, 89, 158, 0.3);
     box-sizing: border-box;
     border-radius: 30px;
     margin-top: 100px;
+    color:  #0f0f0f;
 }
 
 .contacto img{
@@ -112,8 +113,9 @@ h2{
 }
 
 footer{
-    background-color: rgb(152, 68, 160);
-    height: 100px;
+    background-color: #af599e;
+    color: #fbfbfb;
+    height: 90px;
     text-align: center;
     display: flex;
     justify-content: center;
