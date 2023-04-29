@@ -1,41 +1,154 @@
-/* En este archivo escriban su CSS */
-
-/* Fonts */
-/* Importar aquí la font */
-
-
-
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 /* Reset */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
 }
 
-/* Para quitar los puntos a los items de listas */
-ul {
+body {
+    background-color: #fff;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    min-height: 100px;
+    position: relative;
+}
+
+
+
+header::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: ' ';
+    background-color: rgb(47, 38, 48);
+    width: 100%;
+    height: 100%;
+    filter: blur(10px);
+    z-index: -1;
+}
+
+
+header nav ul{
+    display:inline-flex;
+    text-decoration: none;
     list-style: none;
 }
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+header nav ul li{
+    padding: 0px 20px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
+.foto{
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+    width: 250px;
+    margin-top: 50px;
+
+}
+
 main {
     max-width: 1200px;
     margin: auto;
+    
 }
+
+h1{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.contenedor-1{
+    padding: 20px;
+}
+
+button {
+    width: 110px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(172, 78, 180);
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.contenedor-2{
+    padding: 20px;
+    background-color: rgba(212, 114, 188, 0.5);
+    box-sizing: border-box;
+    border-radius: 30px;
+    margin-top: 100px;
+}
+
+.contacto img{
+    width: 100px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0px 55px 0px; 
+}
+
+footer{
+    background-color: rgb(152, 68, 160);
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width:700px){
+    header{
+        width: auto
+        height: 100vh;
+    }
+    main{
+        margin: 0px 10px;
+    } 
+    body{
+        margin: auto;
+        height: auto;
+        width: auto;
+    }
+    .contacto{
+        width: auto;
+        display: inline-flex;
+    }
+}
+    
+/* Para quitar los puntos a los items de listas */
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+
+
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+
 
 /* Recomendaciones! 
 *  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
